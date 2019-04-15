@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        android:textSize="50dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/inLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOne"
+            style="@style/StyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make:" />
+
+        <EditText
+            android:id="@+id/etMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Car name" />
+
+        <TextView
+
+            style="@style/StyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year:" />
+
+        <EditText
+            android:id="@+id/etYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="year" />
+
+        <TextView
+            style="@style/StyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Color:" />
+
+        <EditText
+            android:id="@+id/etColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="color" />
+
+        <TextView
+            style="@style/StyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Price(£):" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rate " />
+
+        <TextView
+            style="@style/StyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engine Size (litre):" />
+
+        <EditText
+            android:id="@+id/etEngine"
+            style="@style/StyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Engine Size(Liter)" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnCreateCar"
+        style="@style/buttonStyle"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inLinear"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:text="CREATE CAR" />
+
+    <Button
+        style="@style/buttonStyle"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inLinear"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="40dp"
+        android:text="CREATE DIESEL" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tvOutput"
+            style="@style/StylebottomTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="500dp" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
